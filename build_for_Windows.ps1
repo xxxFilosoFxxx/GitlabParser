@@ -1,7 +1,6 @@
 python -m venv venv
-echo on
-echo Created virtual environment...
+Write-Host "Created virtual environment..."
 .\venv\Scripts\activate
 pip install -r packages.txt
 pyinstaller --onefile GitlabParser.py
-echo Successfully build .\dist\GitlabParser.exe
+Write-Host "Successfully build .\dist\GitlabParser.exe"

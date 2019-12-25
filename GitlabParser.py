@@ -40,8 +40,8 @@ def main():
     args = parser.parse_args()
 
     parse_git(token=args.token, road_to_file=args.input.name)
+    print('Read data from gitlab using %s file completed' % args.input.name)
 
 
 if __name__ == '__main__':
     main()
-    input('Нажмите любую клавишу для окончания работы...')

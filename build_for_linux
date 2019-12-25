@@ -1,0 +1,8 @@
+#!/bin/bash
+
+python3 -m venv venv
+echo "Created virtual environment.."
+source ./venv/bin/activate
+pip install -r packages.txt
+pyinstaller --onefile GitlabParser.py
+echo "Successfully build ./dist/GitlabParser"

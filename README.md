@@ -2,6 +2,7 @@
 ## Description
 
 Displays incorrect gitlab users data (input .txt file)
+
 **ATTENTION**: The file must be strictly formatted [fio,name,username]
 
 ## Usage

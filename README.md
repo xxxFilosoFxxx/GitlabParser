@@ -13,7 +13,7 @@ Displays incorrect gitlab users data (input .txt file)
 
 You can change the script file and set your path using the ```--path``` option
 
-If you do not do this, created executable file will be located in GitlabParser\dist\
+If you do not do this, created executable file will be located in ```GitlabParser\dist\```
 
 ## Example
 

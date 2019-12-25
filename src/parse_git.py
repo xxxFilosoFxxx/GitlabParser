@@ -1,3 +1,4 @@
+# pylint: disable=too-many-locals, too-many-branches, too-many-statements, missing-docstring, import-error
 import sys
 import requests
 from bs4 import BeautifulSoup

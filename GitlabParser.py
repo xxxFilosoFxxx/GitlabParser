@@ -1,7 +1,6 @@
 """Осуществляет обход gitlab определенных пользователей
     и рассматривает их members, issues и размеры их репозиториев"""
 # pylint: disable-msg=invalid-name
-# too-many-locals, too-many-branches, too-many-statements,
 import platform
 import argparse
 from src.parse_git import parse_git

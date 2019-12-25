@@ -9,7 +9,7 @@ Displays incorrect gitlab users data (input .txt file)
 **WARNING**: When installed on windows requires python3 as 'python' in '%PATH" variable  
 - ```git clone https://github.com/LeadNess/GitlabParser.git```
 - ```cd GitlabParser```
-- Depending on the system: ```./build_for_linux``` or ```.\build_for_Windows.ps1 with the help of PowerShell``` 
+- Depending on the system: ```./build_for_linux``` or ```.\build_for_Windows.ps1```, with the help of PowerShell 
 
 You can change the script file and set your path using the ```--path``` option
 

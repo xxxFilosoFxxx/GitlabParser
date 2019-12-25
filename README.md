@@ -11,7 +11,7 @@ Displays incorrect gitlab users data (input .txt file)
 - ```cd GitlabParser```
 - Depending on the system: ```./build_for_linux``` or ```.\build_for_Windows.ps1```, with the help of PowerShell 
 
-You can change the script file and set your path using the ```--path``` option
+You can change the script file and set your path using the ```--paths``` option
 
 If you do not do this, created executable file will be located in ```GitlabParser\dist\```
 

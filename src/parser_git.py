@@ -1,4 +1,17 @@
-# pylint: disable=too-many-locals, too-many-branches, too-many-statements, missing-docstring
+# pylint: disable=too-many-locals, too-many-branches, line-too-long
+"""
+Основной файл для работы с gitlab
+
+Класс ParserGit использует несколько переменных класса для записи в них
+необходимой для выполнения задачи информации.
+Также имеются два метода: get_logs и parser_git
+
+Сам скрипт можно написать в одну функцию, но это оказалось не практично,
+как итог: работа с классами must have, т.к. работа с параметрами методов класса
+дает обширную возможность для планировки кода.
+
+P.s. Либо берем и разбиваем код на дерево функций, работающую друг с другом.
+"""
 import requests
 from bs4 import BeautifulSoup
 from .read_file import create_connect_file
@@ -8,6 +21,11 @@ PREPODS = ('anetto', 'FunnyWhale')  # example prepods
 
 
 class ParserGit:
+    """
+    Класс, выполянющий:
+    запись из файла ФИО и никнеймыов, записывает их в переменную logs.
+    Совершает обход gitlab, работаю с переменными класса как с локальными параметрами
+    """
 
     get_members = []
     get_issues = []
@@ -17,6 +35,10 @@ class ParserGit:
 
     @staticmethod
     def get_logs(road_to_file):
+        """
+        Осуществляет запись из файла в переменную logs
+        в формате dict
+        """
         ParserGit.logs = create_connect_file(road_to_file)
         return ParserGit.logs
 

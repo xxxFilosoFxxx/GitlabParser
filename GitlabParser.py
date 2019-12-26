@@ -41,7 +41,7 @@ def main():
 
     ParserGit.get_logs(road_to_file=args.input.name)
     ParserGit.parser_git(token=args.token)
-    print('Read data from gitlab using %s file completed' % args.input.name)
+    print('Чтение данных из gitlab с использованием файла %s завершено' % args.input.name)
 
 
 if __name__ == '__main__':

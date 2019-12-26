@@ -3,7 +3,7 @@
 # pylint: disable-msg=invalid-name
 import platform
 import argparse
-from src.parse_git import parse_git
+from src.parser_git import ParserGit
 
 
 if platform.system() == 'Windows':
@@ -39,7 +39,8 @@ def main():
     parser = create_pars()
     args = parser.parse_args()
 
-    parse_git(token=args.token, road_to_file=args.input.name)
+    ParserGit.get_logs(road_to_file=args.input.name)
+    ParserGit.parser_git(token=args.token)
     print('Read data from gitlab using %s file completed' % args.input.name)
 
 
